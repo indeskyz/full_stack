@@ -6,8 +6,9 @@ const usaData = []
 
 
 
-//used to format strings based on the csv uppercasing first letter of each string as well as any letters after whitespace
-// eg) United States
+//used to format strings based on the CSV file uppercasing the first letter of each string as well as any letters 
+//after whitespace
+// eg)  input: united states --> output: United States
 let formatCountryName = countryName => {
   if (typeof countryName !== "string") {
     console.log(`ERR: ${countryName} is not a string!`);
@@ -16,7 +17,7 @@ let formatCountryName = countryName => {
 };
 
 
-//we want to handle this synchronously
+//if file exists, delete it. Otherwise inform the user that a file will be created
 let checkFile = (filePath) => {
   if (fs.existsSync(filePath)) {
     fs.unlink(filePath, (err)=>{
@@ -39,7 +40,7 @@ let uploadFile = (filePath, dataToWrite) => {
   });
 };
 
-
+//main function to read the CSV, add data to the Data Structures, & prepare and create the output files
 let getCountryData = (csvFile, countryOne, countryTwo) => {
   let formattedCountryOne = formatCountryName(countryOne);
   let formattedCountryTwo = formatCountryName(countryTwo);
@@ -72,49 +73,5 @@ let getCountryData = (csvFile, countryOne, countryTwo) => {
 
 
 getCountryData(countryFile, "Canada", "United States")
-
-
-//fs.stat("canada.txt", (err, stats) => {
-//      if (err) {
-//        fs.writeFile("canada.txt", canadaData.toString(), (err) => {
-//          if (err) {
-//            console.log(err);
-//          }
-//        });
-//      } else {
-//        fs.unlink("canada.txt", (err) => {
-//          if (err) {
-//            return console.log(err);
-//          }
-//        });
-//        fs.writeFile("canada.txt", canadaData.toString(), (err) => {
-//          if (err) {
-//            console.log(err);
-//          }
-//        });
-//      }
-//    });
-//    fs.stat("usa.txt", (err, stats) => {
-//      if (err) {
-//        fs.writeFile("usa.txt", usaData.toString(), (err) => {
-//          if (err) {
-//            console.log(err);
-//          }
-//        });
-//      } else {
-//        fs.unlink("usa.txt", (err) => {
-//          if (err) {
-//            return console.log(err);
-//          }
-//        });
-//        fs.writeFile("usa.txt", usaData.toString(), (callback) => {
-//          if (err) {
-//            console.log(err);
-//          }
-//        });
-//      }
-//    });
-//
-
 
 
