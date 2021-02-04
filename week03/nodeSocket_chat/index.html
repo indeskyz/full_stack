@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello world</title>
+</head>
+
+
+
+<body>
+    <div id="error-container"></div>
+    <input id="name" type="text" name="name" value="" placeholder="Enter your name!">
+    <button type="button" name="button" onclick="setUsername()">
+        Let me chat!
+    </button>
+</body>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io();
+
+    function setUsername() {
+        socket.emit('setUsername', document.getElementById('name').value);
+    };
+    var user;
+    socket.on('userExists', function(data) {
+        document.getElementById('error-container').innerHTML = data;
+    });
+    socket.on('userSet', function(data) {
+        user = data.username;
+        document.body.innerHTML = '<input type = "text" onkeydown = "userTyping(true)" onkeyup = "userTyping(false)"id = "message" ><button type = "button"name = "button"onclick = "sendMessage()" > Send </button> <div id = "message-container"> </div> <div><h2 id="typing-status"><h2></div>';
+    });
+
+    function sendMessage() {
+        var msg = document.getElementById('message').value;
+        if (msg) {
+            socket.emit('msg', {
+                message: msg,
+                user: user
+            });
+        }
+    }
+
+
+    function userTyping(status) {
+        socket.emit("userIsTyping", status)
+    }
+
+    socket.on("showUserTyping", (data) => {
+        var typingStatus = document.getElementById("typing-status")
+        typingStatus.innerHTML = ""
+        if (data.status) {
+            typingStatus.innerHTML = `...${data.name} is typing`
+        }
+    })
+
+    socket.on('newmsg', function(data) {
+        if (user) {
+            document.getElementById('message-container').innerHTML += '<div><b>' +
+                data.user + '</b>: ' + data.message + '</div>'
+        }
+    })
+</script>
+
+</html>

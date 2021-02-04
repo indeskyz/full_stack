@@ -1,0 +1,47 @@
+<CTYPE html>
+<html>
+
+    <head>
+          <meta charset="utf-8">
+            <title>SOCKET TO ME</title>
+              <meta name="author" content="">
+                <meta name="description" content="">
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                    <script src = "/socket.io/socket.io.js"></script>
+    </head>
+
+    <body>
+
+          <h1>Live News Feed</h1>
+          <h2 id="msg-welcome"></h2>
+          <div id="news-list"></div>  
+            <script>
+                //connect to server
+                var socket = io("http://localhost:8080")
+                
+                //recieve data from server
+                socket.on("welcome", (data) =>{
+                console.log(data)
+
+                    var msgWelcome = document.getElementById("msg-welcome")
+                    msgWelcome.innerHTML = "Top Stories: "
+                })
+
+                //Receive news
+                socket.on("send-news", (data) => {
+                    var div = document.getElementById("news-list");
+                    for(var i = 0; i < data.length; i++) {
+                        var newsItem = data[i];
+                        div.innerHTML += "<h4>" + newsItem.title + ' <small>'+ newsItem.date + "</small></h4><br>";
+                    } 
+                    socket.emit("news-recieve","Thank you")
+                })
+
+
+            </script>
+    </body>
+
+</html>
+
+
