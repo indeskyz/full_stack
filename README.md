@@ -4,6 +4,6 @@
 
 ### George Brown College
 
-####Dependencies
+#### Dependencies
 
 - dotenv
