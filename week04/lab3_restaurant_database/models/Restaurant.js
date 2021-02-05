@@ -1,27 +1,24 @@
 const mongoose = require('mongoose')
 
 const RestaurantSchema = new mongoose.Schema({
-    address:{
-        building: Number,
-        street: String,
-        zipcode: Number,
-        required: [true, 'Address cannot be empty'],
-        trim: true,
-
-    },
+    address: {
+        building: { type: Number, trim: true },
+        street: { type: String, trim: true },
+        zipcode: { type: Number, trim: true },
+        },
     city:{ 
         type: String,
-        required: [true, 'Street Name is required'],
+        required: [true, 'City fields cannot be empty'],
         trim: true,
     },
     cuisine:{
             type:String,
-            required: [true, 'Please enter the cusine that the restaurant specializes in'],
+            required: [true, 'Cuisine fields cannot be empty'], 
             trim: true,
     },
     restaurant_id:{
             type: Number,
-            required: true,
+            required: [true, 'Restaurant ID cannot be empty'],
             trim: true,
     },
     created: {
