@@ -1,0 +1,3 @@
+[submodule "currency-converter"]
+	path = currency-converter
+	url = git@github.com:indeskyz/full_stack.git
