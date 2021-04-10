@@ -1,0 +1,7 @@
+<ul class="missions" [hidden]="hideDetails"  *ngIf="mission">
+    <li  (click)="showMissionList()"  class="badge"><span>{{mission.mission_name}}</span> {{mission.launch_year}}
+        <p>{{mission.details}}</p>
+    </li>
+</ul>
+
+

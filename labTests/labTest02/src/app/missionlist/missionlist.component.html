@@ -1,0 +1,8 @@
+<ul class="missions" [hidden]="hideMissionList">
+    <li class="badge" *ngFor="let mission of missionList" (click)="details.showDetails()"  (click)="onSelect(mission)"  [class.selected]="mission === selectedMission"><span>{{mission.mission_name}}</span> -- {{mission.launch_year}}
+        <p>{{mission.details}}</p>
+        <aside><img [src]="mission.links.mission_patch_small" /></aside>
+    </li>
+</ul>
+
+<app-missiondetails #details (displayMissionList)="displayMissionList()"  [mission]="selectedMission"></app-missiondetails>
