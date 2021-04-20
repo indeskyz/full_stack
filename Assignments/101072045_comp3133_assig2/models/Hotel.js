@@ -15,7 +15,7 @@ const HotelSchema = new mongoose.Schema(
       required: [true, "A Hotel Name must be Provided"],
       trim: true,
       unique: true,
-      minLength: [3, "Hotel Name Must be Longer than 3 Characters"],
+      minLength: [3, "Hotel Name Must be Longer than 2 Characters"],
       maxLength: [15, "Hotel Name Cannot Exceed 15 Characters"],
     },
 
@@ -27,7 +27,7 @@ const HotelSchema = new mongoose.Schema(
       ],
       trim: true,
       unique: true,
-      minLength: [3, "Street Name Must be Longer than 3 Characters"],
+      minLength: [3, "Street Name Must be Longer than 2 Characters"],
       maxLength: [15, "Street Name Cannot Exceed 15 Characters"],
     },
     city: {

@@ -15,7 +15,7 @@ const BookingSchema = new mongoose.Schema(
       required: [true, "Please Enter the Date of your Inital Booking"],
       trim: true,
       unqiue: true,
-      minLength: [3, "Booking Date must be longer than 3 Characters"],
+      minLength: [3, "Booking Date must be longer than 2 Characters"],
       maxLength: [15, "Booking Date Cannot Exceed 15 Characters"],
       validate: function (startDate) {
         return regexPattern.checkDate.test(startDate);
@@ -30,7 +30,7 @@ const BookingSchema = new mongoose.Schema(
       unique: true,
       minLength: [
         3,
-        "The Start of your Booking Date Must be Longer than 3 Characters",
+        "The Start of your Booking Date Must be Longer than 2 Characters",
       ],
       maxLength: [
         15,
@@ -49,7 +49,7 @@ const BookingSchema = new mongoose.Schema(
       unique: true,
       minLength: [
         3,
-        "The End of your Booking Date Must be Longer than 3 Characters",
+        "The End of your Booking Date Must be Longer than 2 Characters",
       ],
       maxLength: [
         15,
