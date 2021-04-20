@@ -1,22 +1,32 @@
-const dotenv = require("dotenv").config();
-const createGraphQLLogger = require("graphql-log");
 const express = require("express");
 const mongoose = require("mongoose");
-const TypeDefs = require("./schemas/schema");
-const Resolvers = require("./resolver/resolver");
-const format = require("./errors");
+const helmet = require("helmet");
+const {
+  mongoURL,
+  PORT,
+  clientEmail,
+  clientPassword,
+} = require("./helpers/env.dev");
 const cors = require("cors");
-const writeLog = require("./logger");
+
 const { ApolloServer } = require("apollo-server-express");
+const createGraphQLLogger = require("graphql-log");
+const Resolvers = require("./resolver/resolver");
+const TypeDefs = require("./schemas/schema");
 
-const mongoURL = process.env.MONGO_URL;
-const PORT = process.env.PORT;
+const format = require("./helpers/errors");
+const writeLog = require("./helpers/logger");
 const serverStartTime = new Date().toLocaleString();
-const logExecutions = createGraphQLLogger();
+const logExecutions = createGraphQLLogger({
+  logger: function (msg) {
+    writeLog.logger(`\nGraphQL Executions:\n${msg} on ${serverStartTime}\n`);
+  },
+});
 
+//Log GraphQL Executions
 logExecutions(Resolvers);
 
-//to supress warning when using 'unique on the models'
+//Supress warning when using 'unique on the models'
 mongoose.set("useCreateIndex", true);
 const connectToDB = mongoose.connect(mongoURL, {
   useNewUrlParser: true,
@@ -28,6 +38,9 @@ connectToDB
     console.log(
       `\nSuccessfully Connected to Database! \nConnection started at: ${serverStartTime}\n`
     );
+    console.log(`To Sign Into The Application Use The Following Credentials: \n
+    Email: ${clientEmail}
+    Password: ${clientPassword}\n`);
     writeLog.logger(`Database Connection Successfull: ${serverStartTime}\n`);
   })
   .catch((err) => {
@@ -54,13 +67,16 @@ const server = new ApolloServer({
 });
 
 const app = express();
+
 app.use(express.json());
+app.use("*", cors());
+
 app.use(
   express.urlencoded({
     extended: true,
   })
 );
-app.use("*", cors());
+
 server.applyMiddleware({
   app,
 });

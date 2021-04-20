@@ -1,0 +1,4 @@
+Log File Created
+
+GraphQL Successfully Connected: 2021-04-20, 5:16:32 a.m.
+Database Connection Successfull: 2021-04-20, 5:16:32 a.m.

@@ -1,0 +1,6 @@
+{
+  "domain": "hotel-booking.us.auth0.com",
+  "clientId": "Hhda3SnOQmsywBNHpM7COGxxw0m8L8Bm",
+  "audience": "https://hotelBooking",
+  "serverUrl": "http://localhost:8080"
+}

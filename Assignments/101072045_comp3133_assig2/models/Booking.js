@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const regexPattern = require("../regex");
+const regexPattern = require("../helpers/regex");
 
 const BookingSchema = new mongoose.Schema(
   {

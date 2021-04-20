@@ -1,0 +1,13 @@
+<body *ngIf="(auth.isAuthenticated$ | async) === false">
+    <h1>Welcome</h1>
+<h2>You Have 2 Ways to Access The Application</h2>
+<ul>
+    <li>You Can sign in using the following credentials: 
+        <p><u>Email:</u><b> hotelBookerForGBC@gmail.com</b></p>
+        <p><u>Password:</u><b> GBCSchoolPasswordForFullStack2020</b></p></li>
+    
+    <li>Or, you can use those same credentials but use the <b>'Continue With Google'</b> option.</li>
+</ul>
+
+</body>
+

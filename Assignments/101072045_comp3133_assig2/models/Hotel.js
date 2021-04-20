@@ -1,4 +1,4 @@
-const regexPattern = require("../regex");
+const regexPattern = require("../helpers/regex");
 const mongoose = require("mongoose");
 
 const HotelSchema = new mongoose.Schema(

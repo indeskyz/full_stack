@@ -32,6 +32,14 @@ const checkFileSize = (pathToFile) => {
   });
 };
 
+//Initally Write file for appending
+const logFileCreationMessage = `Log File Created\n`;
+fs.writeFile(savedFile, logFileCreationMessage, (err) => {
+  if (err) {
+    throw err;
+  }
+});
+
 //Most Recent Logs will be at the bottom of the file
 module.exports.logger = (data) => {
   checkFileSize(savedFile);
