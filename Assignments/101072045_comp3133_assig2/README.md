@@ -9,9 +9,9 @@
 **A Log Folder and Log File is created for you at startup**
 
 - The Application will output to the console the directory name where you can find the directory and its content
-  - will look something like _pathToApplication/helpers/logFiles/logFile.txt_
+  - will look something like _pathToApplication/helpers/logFiles/serverLog.txt_
   - once a log file reaches 5MB in size, a new one will be created
-    - naming convention for log files is as follows: _logFile.txt_ , _logFile1.txt_ , _logFile2.txt_ , _etc_
+    - naming convention for log files is as follows: _serverLog.txt_ , _serverLog1.txt_ , _serverLog2.txt_ , _etc_
 
 ### Features
 
