@@ -16,10 +16,10 @@
 ### Features
 
 - Login & Authentication using Auth0
-- You may only access the home page unless you are an authenticated & signed in user.
+- **You may only access the home page unless you are an authenticated & signed in user**.
 
-  - this allows for SSN, OAuth with Google, or Create your own account.
-  - **A default account has been provided for you and can be found in the console output upon startup**
+  - Allows for SSN, OAuth with Google, or Create your own account.
+  - **a default account has been provided for you and can be found in the console output upon startup**
     - _its also provided in the applications home page, just in case_
 
 - Profile Page which displays basic profile information
