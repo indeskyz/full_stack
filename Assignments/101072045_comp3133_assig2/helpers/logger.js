@@ -20,7 +20,7 @@ fs.mkdir(path.join(__dirname, "logFiles"), { recursive: true }, (err) => {
 });
 
 //check if file is greater than 5MB
-//if it is, rename it and let writeFile create a new serverLog file to write to
+//if it is, rename it & create  new serverLog file to write to
 const checkFileSize = (bytes) => {
   if (bytes >= 5_120_000) {
     file += appendToFile;
