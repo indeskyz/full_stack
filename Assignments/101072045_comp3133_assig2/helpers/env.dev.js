@@ -11,7 +11,6 @@ const domain = process.env.AUTH0_DOMAIN;
 const clientEmail = process.env.clientEmail;
 const clientPassword = process.env.clientPassword;
 
-//Never would actually hardcode passwords in error messages
 //just for additonal troubleshooting
 if (!PORT) {
   throw new Error(
@@ -23,35 +22,32 @@ if (!PORT) {
 if (!mongoURL) {
   throw new Error(
     `.env is missing the definition for mongoURL! \nMake sure to create it and add the 
-      variable mongoURL with the value of: MONGO_URL=mongodb+srv://TANNER:schoolpasswordthatwillberemoved@mean.dhnhb.mongodb.net/assignment02?retryWrites=true&w=majority
+      variable mongoURL with the value of: MONGO_URL=mongodb+srv://NAME:<yourpasswordhere>@mean.dhnhb.mongodb.net/assignment02?retryWrites=true&w=majority
 `
   );
 }
 
 if (!clientOrigin) {
   throw new Error(
-    `.env is missing the definition for clientOrigin! \nMake sure to create it and add the 
-      variable clientOrigin with the value of: http://localhost:4200`
+    `.env is missing the definition for clientOrigin! \nMake sure to create it and add the variable clientOrigin with the value of: http://localhost:4200`
   );
 }
 
 if (!audience) {
   throw new Error(
-    `.env is missing the definition for AUTH0_AUDIENCE! \nMake sure to create it and add the 
-      variable AUTH0_AUDIENCE with the value of: https://hotelBooking`
+    `.env is missing the definition for AUTH0_AUDIENCE! \nMake sure to create it and add the variable AUTH0_AUDIENCE with the value of: https://hotelBooking`
   );
 }
 
 if (!domain) {
   throw new Error(
-    `.env is missing the definition for AUTH0_DOMAIN! \nMake sure to create it and add the 
-      variable AUTH0_DOMAIN with the value of: hotel-booking.us.auth0.com`
+    `.env is missing the definition for AUTH0_DOMAIN! \nMake sure to create it and add the variable AUTH0_DOMAIN with the value of: hotel-booking.us.auth0.com`
   );
 }
 
 if (!clientEmail) {
   throw new Error(
-    `.env is missing the definition for clientEmail! \nMake sure to create it and add the     variable clientEmail with the value of: hotelBookerForGBC@gmail.com`
+    `.env is missing the definition for clientEmail! \nMake sure to create it and add the variable clientEmail with the value of: hotelBookerForGBC@gmail.com`
   );
 }
 
