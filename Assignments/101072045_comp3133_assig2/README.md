@@ -15,7 +15,8 @@
 
 ### Features
 
-- Login & Authentication using Auth0
+- Login & Authentication using AuthO
+- You may only access the home page unless you are an authenticated & signed in user.
 
   - this allows for SSN, OAuth with Google, or Create your own account.
   - **A default account has been provided for you and can be found in the console output upon startup**
