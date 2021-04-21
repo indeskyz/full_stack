@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
-const regexPattern = require("../helpers/regex");
+const { checkEmail, checkPostalCode, checkDate } = require("../helpers/regex");
 
+//FIX INDEXES
 const BookingSchema = new mongoose.Schema(
   {
     hotel_id: {
@@ -18,7 +19,7 @@ const BookingSchema = new mongoose.Schema(
       minLength: [3, "Booking Date must be longer than 2 Characters"],
       maxLength: [15, "Booking Date Cannot Exceed 15 Characters"],
       validate: function (startDate) {
-        return regexPattern.checkDate.test(startDate);
+        return checkDate.test(startDate);
       },
       message: (props) =>
         `${props.value} is an invalid format! \nDates must match YYYY-MM-DD or YYYY/MM/DD `,
@@ -37,7 +38,7 @@ const BookingSchema = new mongoose.Schema(
         "The Start of your Booking Date Cannot Exceed 15 Characters",
       ],
       validate: function (startDate) {
-        return regexPattern.checkDate.test(startDate);
+        return checkDate.test(startDate);
       },
       message: (props) =>
         `${props.value} is an invalid format! \nDates must match YYYY-MM-DD or YYYY/MM/DD `,
@@ -56,22 +57,18 @@ const BookingSchema = new mongoose.Schema(
         "The End of your Booking Date Cannot Exceed 15 Characters",
       ],
       validate: function (startDate) {
-        return regexPattern.checkDate.test(startDate);
+        return checkDate.test(startDate);
       },
       message: (props) =>
         `${props.value} is an invalid format! \nDates must match YYYY-MM-DD or YYYY/MM/DD `,
     },
 
-    user_id: [
-      {
-        //type:Number,
-        //required: true,
-        //trim:true,
-        //unqiue: true
-        type: mongoose.Schema.ObjectId,
-        ref: "User",
-      },
-    ],
+    user_id: {
+      type: Number,
+      required: true,
+      trim: true,
+      unqiue: true,
+    },
   },
   { timestamps: true }
 );

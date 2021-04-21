@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const regexPattern = require("../helpers/regex");
+const { checkEmail, checkDate, checkPostalCode } = require("../helpers/regex");
 
 const UserSchema = new mongoose.Schema(
   {
@@ -30,7 +30,7 @@ const UserSchema = new mongoose.Schema(
       required: true,
       unique: true,
       validate: function (emailString) {
-        return regexPattern.checkEmail.test(emailString);
+        return checkEmail.test(emailString);
       },
       message: (props) =>
         `${props.value} is an invalid email format. \n valid options include: user@name.com, user@name.ca, user@name.io, user@name.xyz`,

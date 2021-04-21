@@ -9,11 +9,13 @@ const formatError = (err) => {
 
 const validateField = (argToBeValidated, arguementName, regexPattern) => {
   if (!regexPattern.test(argToBeValidated)) {
-    throw new apolloError.ValidationError("Invalid argument value", {
-      argumentName: arguementName,
-    });
+    throw new apolloError.ValidationError(
+      `Invalid argument value for ${arguementName}`
+    );
   }
 };
 
-module.exports = formatError;
-module.exports = validateField;
+module.exports = {
+  formatError,
+  validateField,
+};

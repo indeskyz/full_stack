@@ -1,0 +1,38 @@
+<h3>Create a New Booking</h3>
+
+<form class="form-inline" [hidden]="loading">
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="hotelID" class="sr-only">Hotel ID </label>
+        <input [(ngModel)]="hotel_id" type="number" class="form-control" name="hotelID" placeholder="Enter Book ID" required />
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="bookingDate" class="sr-only">Inital Booking Date </label>
+        <input [(ngModel)]="booking_date" type="text" class="form-control" name="bookingDate" placeholder="Date you wish to make the booking on" required />
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="bookingStart" class="sr-only">Booking Start Date </label>
+        <input [(ngModel)]="booking_start" type="text" class="form-control" name="bookingStart" placeholder="Date of the start of your booking" required />
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="bookingEnd" class="sr-only">Booking End Date </label>
+        <input [(ngModel)]="booking_end" type="text" class="form-control" name="bookingEnd" placeholder="Date of the end of your booking" required />
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="userID" class="sr-only">User ID </label>
+        <input [(ngModel)]="user_id" type="number" class="form-control" name="userID" placeholder="User ID" required />
+    </div><br/>
+    <div>
+        <button (click)="createBooking()" type="submit" class="btn btn-primary mb-2">
+            Book Hotel
+        </button>
+    </div>
+
+</form>
+
+
+<div *ngIf="loading">
+    <b>Creating Booking...</b>
+</div>
+
+
+<h2 [hidden]="createdBookingMsg">Successfully Created Booking!</h2>

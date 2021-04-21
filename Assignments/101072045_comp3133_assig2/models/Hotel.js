@@ -1,4 +1,4 @@
-const regexPattern = require("../helpers/regex");
+const { checkEmail, checkPostalCode, checkDate } = require("../helpers/regex");
 const mongoose = require("mongoose");
 
 const HotelSchema = new mongoose.Schema(
@@ -44,7 +44,7 @@ const HotelSchema = new mongoose.Schema(
       trim: true,
       unique: true,
       validate: function (postalCode) {
-        return regexPattern.checkPostalCode.test(postalCode);
+        return checkPostalCode.test(postalCode);
       },
       message: (props) =>
         `${props.value} is an invalid Postal Code format. \nmust match N7S 1T6 or N7S1T6`,
@@ -65,7 +65,7 @@ const HotelSchema = new mongoose.Schema(
       required: [true, "Please provide an email"],
       unique: true,
       validate: function (emailString) {
-        return regexPattern.checkEmail.test(emailString);
+        return checkEmail.test(emailString);
       },
       message: (props) =>
         `${props.value} is an invalid email format. \n valid options include: user@name.com, user@name.ca, user@name.io, user@name.xyz`,

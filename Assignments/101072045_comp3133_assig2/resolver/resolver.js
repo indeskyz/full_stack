@@ -1,6 +1,6 @@
 const UserInputError = require("apollo-server-errors");
-const regexPattern = require("../helpers/regex");
-const validator = require("../helpers/errors");
+const { checkEmail, checkPostalCode, checkDate } = require("../helpers/regex");
+const { validateField } = require("../helpers/errors");
 const Hotel = require("../models/Hotel");
 const Booking = require("../models/Booking");
 const User = require("../models/User");
@@ -20,23 +20,21 @@ exports.resolvers = {
       return await Booking.find({});
     },
   },
+
+  //FIX REGEX
   Mutation: {
     bookHotel: async (parent, args) => {
-      validator.validateField(
+      validateField(
         args.booking_date,
         (bookingDate = "Originally Booked On"),
-        regexPattern.checkDate
+        checkDate
       );
-      validator.validateField(
-        args.start_date,
-        (startDate = "Booking Start Date"),
-        regexPattern.checkDate
-      );
-      validator.validateField(
-        args.end_date,
-        (endDate = "Booking End Date"),
-        regexPattern.checkDate
-      );
+      // validateField(
+      //   args.start_date,
+      //   (startDate = "Booking Start Date"),
+      //   checkDate
+      // );
+      //validateField(args.end_date, (endDate = "Booking End Date"), checkDate);
       if (args.hotel_id < 0) {
         throw new UserInputError("Error, Hotel ID must be greater than 0!");
       }
@@ -50,15 +48,11 @@ exports.resolvers = {
       return await newBooking.save();
     },
     createHotel: async (parent, args) => {
-      validator.validateField(
-        args.email,
-        (email = "email"),
-        regexPattern.checkEmail
-      );
-      validator.validateField(
+      validateField(args.email, (emal = "email"), checkEmail);
+      validateField(
         args.postal_code,
         (postalCode = "postal code"),
-        regexPattern.checkPostalCode
+        checkPostalCode
       );
       if (args.hotel_id < 0) {
         throw new UserInputError("Error, Hotel ID must be greater than 0!");

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AuthModule } from '@auth0/auth0-angular';
 import { environment as env } from '../environments/environment';
 
@@ -22,6 +22,9 @@ import { ExternalApiComponent } from './pages/external-api/external-api.componen
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthHttpInterceptor } from '@auth0/auth0-angular';
+import { GraphQLModule } from './graphql.module';
+import { BookingPageComponent } from './pages/booking-page/booking-page.component';
+import { ViewBookingsPageComponent } from './pages/view-bookings-page/view-bookings-page.component';
 
 @NgModule({
   declarations: [
@@ -39,17 +42,21 @@ import { AuthHttpInterceptor } from '@auth0/auth0-angular';
     FooterComponent,
     ProfileComponent,
     ExternalApiComponent,
+    BookingPageComponent,
+    ViewBookingsPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     AuthModule.forRoot({
       ...env.auth,
       httpInterceptor: {
         allowedList: [`${env.dev.serverUrl}/messages/protected-message`],
       },
     }),
+    GraphQLModule,
   ],
   providers: [
     {

@@ -1,0 +1,30 @@
+
+<body>
+
+    <div *ngIf="bookingsList">
+        <h2>All Hotels Currently Booked In The System</h2>
+        <ul *ngFor="let hotel of bookingsList">
+            <li>
+                <div><b>ID: </b> {{hotel.hotel_id}}</div>
+            </li>
+            <li>
+                <div><b>Inital Booking Date: </b>{{hotel.booking_date}}</div>
+            </li>
+
+            <li>
+                <div> <b>Start of Booking: </b>{{hotel.booking_start}}</div>
+            </li>
+
+            <li>
+                <div><b>End of Booking: </b>${{hotel.booking_end}}</div>
+            </li>
+
+
+            <li>
+                <div> <b>Associated User ID's: </b> {{hotel.user_id}}</div>
+            </li>
+
+        </ul>
+    </div>
+</body>
+

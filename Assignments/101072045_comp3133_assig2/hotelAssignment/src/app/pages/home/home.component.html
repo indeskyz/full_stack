@@ -1,7 +1,46 @@
 <app-home *ngIf="(auth.isAuthenticated$ | async) === false"></app-home>
+
 <body *ngIf="auth.isAuthenticated$ | async">
     <h1 *ngIf="auth.user$ | async as user">Welcome Back, {{user?.name}}</h1>
+
+
+    <button routerLink="/booking-page" class="nav-link" routerLinkActive="router-link-exact-active">
+        Create a Booking
+    </button>
+    
+    <button routerLink="/view-bookings-page" class="nav-link" routerLinkActive="router-link-exact-active">
+        View All Bookings
+    </button>
+
+    <div *ngIf="hotelList">
+        <h2>All Hotels Currently Listed In The System</h2>
+        <ul *ngFor="let hotel of hotelList">
+            <h3>
+                <div><b>{{hotel.hotel_name}}</b></div>
+            </h3>
+            <li>
+                <div><b>ID: </b> {{hotel.hotel_id}}</div>
+            </li>
+            <li>
+                <div><b>Street: </b>{{hotel.street}}</div>
+            </li>
+
+            <li>
+                <div> <b>Postal Code: </b>{{hotel.postal_code}}</div>
+            </li>
+
+            <li>
+                <div><b>Price per day: </b>${{hotel.price}}</div>
+            </li>
+
+            <li>
+                <div> <b>Contact Email: </b> {{hotel.email}}</div>
+            </li>
+
+            <li>
+                <div> <b>Associated User ID's: </b> {{hotel.user_id}}</div>
+            </li>
+
+        </ul>
+    </div>
 </body>
-
-
-

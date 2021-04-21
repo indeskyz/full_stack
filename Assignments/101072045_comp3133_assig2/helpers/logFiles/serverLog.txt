@@ -1,4 +1,28 @@
 Log File Created
 
-GraphQL Successfully Connected: 2021-04-20, 5:16:32 a.m.
-Database Connection Successfull: 2021-04-20, 5:16:32 a.m.
+GraphQL Successfully Connected: 2021-04-21, 4:42:23 a.m.
+Database Connection Successfull: 2021-04-21, 4:42:23 a.m.
+
+GraphQL Executions:
+resolvers.Mutation.bookHotel on 2021-04-21, 4:42:23 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-21, 4:42:23 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-21, 4:42:23 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-21, 4:42:23 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-21, 4:42:23 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-21, 4:42:23 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-21, 4:42:23 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-21, 4:42:23 a.m.
