@@ -26,4 +26,22 @@ export class GetAllHotelsService {
       `,
     });
   }
+
+  getLatest() {
+    return this.apollo.watchQuery({
+      query: gql`
+        query {
+          getHotels {
+            hotel_id
+            hotel_name
+            street
+            postal_code
+            price
+            email
+            user_id
+          }
+        }
+      `,
+    });
+  }
 }

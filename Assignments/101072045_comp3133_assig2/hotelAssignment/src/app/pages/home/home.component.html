@@ -11,6 +11,18 @@
     <button routerLink="/view-bookings-page" class="nav-link" routerLinkActive="router-link-exact-active">
         View All Bookings
     </button>
+    
+    <button routerLink="/search-hotels-by-name-page" class="nav-link" routerLinkActive="router-link-exact-active">
+        Search Hotels By Name
+    </button>
+    
+    <button routerLink="/search-hotels-by-city-page" class="nav-link" routerLinkActive="router-link-exact-active">
+        Search Hotels By City
+    </button>
+
+    <div>
+    <button (click)="refresh()">Update Listings</button>
+    </div>
 
     <div *ngIf="hotelList">
         <h2>All Hotels Currently Listed In The System</h2>
@@ -38,7 +50,7 @@
             </li>
 
             <li>
-                <div> <b>Associated User ID's: </b> {{hotel.user_id}}</div>
+                <div> <b>Associated User ID: </b> {{hotel.user_id}}</div>
             </li>
 
         </ul>

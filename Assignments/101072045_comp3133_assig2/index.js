@@ -15,13 +15,16 @@ const Resolvers = require("./resolver/resolver");
 const TypeDefs = require("./schemas/schema");
 
 const format = require("./helpers/errors");
-const writeLog = require("./helpers/logger");
+const { logger } = require("./helpers/logger");
 const serverStartTime = new Date().toLocaleString();
 const logExecutions = createGraphQLLogger({
   logger: function (msg) {
-    writeLog.logger(`\nGraphQL Executions:\n${msg} on ${serverStartTime}\n`);
+    logger(`\nGraphQL Executions:\n${msg} on ${serverStartTime}\n`);
   },
 });
+
+//Start Logging
+logger(`\n----Log File Created---- \nCreation Date: ${serverStartTime}\n`);
 
 //Log GraphQL Executions
 logExecutions(Resolvers);
@@ -41,14 +44,14 @@ connectToDB
     console.log(`To Sign Into The Application Use The Following Credentials: \n
     Email: ${clientEmail}
     Password: ${clientPassword}\n`);
-    writeLog.logger(`Database Connection Successfull: ${serverStartTime}\n`);
+    logger(`Database Connection Successfull: ${serverStartTime}\n`);
   })
   .catch((err) => {
     console.error(
       `ERROR CONNECTING to MONGODB -- Is your connection string correct?\n `,
       `\n${err} \n`
     );
-    writeLog.logger(
+    logger(
       `\nDatabase Connection Error:\n ${err} \nOCCURED AT: ${serverStartTime}\n`
     );
   });
@@ -59,7 +62,7 @@ const server = new ApolloServer({
   onHealthCheck: () => {
     new Promise((resolve, reject) => {
       console.log("Health Check Passed!");
-      writeLog.logger("------HEALTH CHECK PING--------");
+      logger("------HEALTH CHECK PING--------");
       resolve();
     });
   },
@@ -88,14 +91,14 @@ try {
       `\nSuccessfully Connected to GraphQL!\nServer ready at: ${apolloURL} \nConnection started at: ${serverStartTime}\n`
     )
   );
-  writeLog.logger(`\nGraphQL Successfully Connected: ${serverStartTime}\n`);
+  logger(`\nGraphQL Successfully Connected: ${serverStartTime}\n`);
 } catch (err) {
   console.log(
     "\nERROR could not connect to server: \n",
     `\n ${err} \n`,
     `\nERROR OCCURED AT: ${serverStartTime} \nCheck Health by pinging: ${apolloURL}/.well-known/apollo/server-health`
   );
-  writeLog.logger(
+  logger(
     `\nGraphQL Connection Error: ${err} \nOccured at: ${serverStartTime}\n`
   );
 }

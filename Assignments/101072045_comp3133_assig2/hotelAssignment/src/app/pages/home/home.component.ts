@@ -16,4 +16,8 @@ export class HomePageComponent implements OnInit {
       this.hotelList = resp.data.getHotels;
     });
   }
+
+  refresh() {
+    return this.query.getLatest().refetch();
+  }
 }

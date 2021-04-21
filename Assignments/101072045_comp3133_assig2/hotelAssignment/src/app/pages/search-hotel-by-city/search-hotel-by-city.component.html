@@ -1,0 +1,53 @@
+<h3>Find Hotels by City Name</h3>
+
+<form class="form-inline">
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="hotelCity" class="sr-only">City Name </label>
+        <input [(ngModel)]="city" type="string" class="form-control" name="hotelCity" placeholder="Enter City Name" required />
+    </div>
+   <br/>
+    <div>
+        <button (click)="getHotelByCity()" type="submit" class="btn btn-primary mb-2">
+            Find
+        </button>
+    </div>
+
+</form>
+
+
+<div *ngIf="loading">
+    <b>Fetching Results</b>
+</div>
+
+
+<div *ngIf="hotelByCityList" [hidden]="hotelDetails"><h3>{{results}}</h3>
+    <ul *ngFor="let hotel of hotelByCityList">
+            <h3>
+                <div><b>{{hotel.hotel_name}}</b></div>
+            </h3>
+            <li>
+                <div><b>ID: </b> {{hotel.hotel_id}}</div>
+            </li>
+            <li>
+                <div><b>Street: </b>{{hotel.street}}</div>
+            </li>
+
+            <li>
+                <div> <b>Postal Code: </b>{{hotel.postal_code}}</div>
+            </li>
+
+            <li>
+                <div><b>Price per day: </b>${{hotel.price}}</div>
+            </li>
+
+            <li>
+                <div> <b>Contact Email: </b> {{hotel.email}}</div>
+            </li>
+
+
+
+
+    </ul>
+    
+
+</div>

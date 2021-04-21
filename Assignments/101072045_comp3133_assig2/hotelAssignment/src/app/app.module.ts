@@ -25,6 +25,8 @@ import { AuthHttpInterceptor } from '@auth0/auth0-angular';
 import { GraphQLModule } from './graphql.module';
 import { BookingPageComponent } from './pages/booking-page/booking-page.component';
 import { ViewBookingsPageComponent } from './pages/view-bookings-page/view-bookings-page.component';
+import { SearchHotelByNameComponent } from './pages/search-hotel-by-name/search-hotel-by-name.component';
+import { SearchHotelByCityComponent } from './pages/search-hotel-by-city/search-hotel-by-city.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,8 @@ import { ViewBookingsPageComponent } from './pages/view-bookings-page/view-booki
     ExternalApiComponent,
     BookingPageComponent,
     ViewBookingsPageComponent,
+    SearchHotelByNameComponent,
+    SearchHotelByCityComponent,
   ],
   imports: [
     BrowserModule,
