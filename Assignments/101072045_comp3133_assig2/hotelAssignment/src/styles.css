@@ -6,7 +6,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #5d8198;
   overflow: hidden;
   height: 100vh;
 }
@@ -41,11 +40,11 @@ button {
 }
 
 .footer {
-  background-color: #5d8198;
+  background-color: /*#5d8198*/ #628b93;
 }
 
 .main-bg,
 .navbar-bg,
 .app {
-  background-color: #642b2e;
+  background-color: #45425a; /*#642b2e;*/
 }

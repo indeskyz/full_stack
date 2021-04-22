@@ -1,5 +1,4 @@
 body {
-  background-color: #642b2e;
   height: 65vh;
 }
 
@@ -36,9 +35,9 @@ h4,
 }
 
 .tracking-out-expand-fwd-bottom {
-  -webkit-animation: tracking-out-expand-fwd-bottom 1.8s
+  -webkit-animation: tracking-out-expand-fwd-bottom 2s
     cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: tracking-out-expand-fwd-bottom 1.8s
+  animation: tracking-out-expand-fwd-bottom 2s
     cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
@@ -76,9 +75,9 @@ h4,
 }
 
 .blur-out-contract {
-  -webkit-animation: blur-out-contract 1.5s
-    cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: blur-out-contract 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  -webkit-animation: blur-out-contract 2s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: blur-out-contract 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 @-webkit-keyframes blur-out-contract {
