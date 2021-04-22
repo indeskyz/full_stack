@@ -3840,3 +3840,600 @@ resolvers.Query.getHotels on 2021-04-22, 4:05:44 a.m.
 
 GraphQL Executions:
 resolvers.Query.getHotels on 2021-04-22, 4:05:44 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 4:05:44 a.m.
+
+----Log File Created---- 
+Creation Date: 2021-04-22, 10:14:34 a.m.
+
+GraphQL Successfully Connected: 2021-04-22, 10:14:34 a.m.
+Database Connection Successfull: 2021-04-22, 10:14:34 a.m.
+
+----Log File Created---- 
+Creation Date: 2021-04-22, 10:18:19 a.m.
+
+GraphQL Successfully Connected: 2021-04-22, 10:18:19 a.m.
+Database Connection Successfull: 2021-04-22, 10:18:19 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:18:19 a.m.
+
+GraphQL Executions:
+resolvers.Mutation.bookHotel on 2021-04-22, 10:18:19 a.m.
+
+GraphQL Executions:
+resolvers.Mutation.bookHotel on 2021-04-22, 10:18:19 a.m.
+
+GraphQL Executions:
+resolvers.Mutation.bookHotel on 2021-04-22, 10:18:19 a.m.
+
+GraphQL Executions:
+resolvers.Mutation.bookHotel on 2021-04-22, 10:18:19 a.m.
+
+GraphQL Executions:
+resolvers.Mutation.bookHotel on 2021-04-22, 10:18:19 a.m.
+
+GraphQL Executions:
+resolvers.Mutation.bookHotel on 2021-04-22, 10:18:19 a.m.
+
+GraphQL Executions:
+resolvers.Mutation.bookHotel on 2021-04-22, 10:18:19 a.m.
+
+GraphQL Executions:
+resolvers.Mutation.bookHotel on 2021-04-22, 10:18:19 a.m.
+
+GraphQL Executions:
+resolvers.Mutation.bookHotel on 2021-04-22, 10:18:19 a.m.
+
+GraphQL Executions:
+resolvers.Mutation.bookHotel on 2021-04-22, 10:18:19 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:18:19 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:18:19 a.m.
+
+GraphQL Executions:
+resolvers.Mutation.bookHotel on 2021-04-22, 10:18:19 a.m.
+
+----Log File Created---- 
+Creation Date: 2021-04-22, 10:44:10 a.m.
+
+GraphQL Successfully Connected: 2021-04-22, 10:44:10 a.m.
+Database Connection Successfull: 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotelBooking on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Mutation.bookHotel on 2021-04-22, 10:44:10 a.m.
+
+GraphQL Executions:
+resolvers.Query.getHotels on 2021-04-22, 10:44:10 a.m.

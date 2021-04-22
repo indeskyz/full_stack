@@ -2,15 +2,9 @@
 
 <h3>Create a New Booking</h3>
 
-
-
-
-
-
-
 <form class="form-container" [hidden]="loading">
     <div class="item-1">
-        <input [(ngModel)]="hotel_id" type="text" class="form-control" name="hotelID" placeholder="Hotel ID" required />
+        <input [(ngModel)]="hotel_id" type="number" min="0" class="form-control" name="hotelID" placeholder="Hotel ID" required />
     </div>
     <div class="item-2">
         <input [(ngModel)]="booking_date" type="text" class="form-control" name="bookingDate" placeholder="Inital Booking Date" required />
@@ -22,14 +16,14 @@
         <input [(ngModel)]="booking_end" type="text" class="form-control" name="bookingEnd" placeholder="Booking End Date" required />
     </div>
     <div class="item-5">
-        <input [(ngModel)]="user_id" type="text" class="form-control" name="userID" placeholder="User ID" required />
+        <input [(ngModel)]="user_id" type="number" min="0" class="form-control" name="userID" placeholder="User ID" required />
     </div><br/>
 
 </form>
 <div class="format-helper">
-<div class="booking-date">YYYY-MM-DD or YYYY/MM/DD</div>
-<div class="booking-start"> YYYY-MM-DD or YYYY/MM/DD</div>
-<div class="booking-end">YYYY-MM-DD or YYYY/MM/DD</div>
+<div class="booking-date">MM-DDYYY or MM/DD/YYYY</div>
+<div class="booking-start"> MM-DD-YYYY or MM/DD/YYYY</div>
+<div class="booking-end">MM-DD-YYYY or MM/DD/YYYY</div>
 </div>
 
     <div class="btn">

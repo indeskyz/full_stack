@@ -2,13 +2,15 @@ div {
   display: flex;
   justify-items: center;
   justify-content: center;
+  position: relative;
+  left: 47vw;
+  padding-right: 4rem;
+  padding-top: 1rem;
 }
 
 .logout-btn {
-  position: absolute;
-  top: 65vh;
   height: 5rem;
-  width: 15rem;
+  width: 13rem;
   background-color: #011627;
   border-radius: 2em;
   border-color: transparent;

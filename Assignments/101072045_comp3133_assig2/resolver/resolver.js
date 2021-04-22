@@ -21,7 +21,6 @@ exports.resolvers = {
     },
   },
 
-  //FIX REGEX
   Mutation: {
     bookHotel: async (parent, args) => {
       validateField(
@@ -29,12 +28,16 @@ exports.resolvers = {
         (bookingDate = "Originally Booked On"),
         checkDate
       );
-      // validateField(
-      //   args.start_date,
-      //   (startDate = "Booking Start Date"),
-      //   checkDate
-      // );
-      //validateField(args.end_date, (endDate = "Booking End Date"), checkDate);
+      validateField(
+        args.booking_start,
+        (startDate = "Booking Start Date"),
+        checkDate
+      );
+      validateField(
+        args.booking_end,
+        (endDate = "Booking End Date"),
+        checkDate
+      );
       if (args.hotel_id < 0) {
         throw new UserInputError("Error, Hotel ID must be greater than 0!");
       }

@@ -13,21 +13,21 @@ h2 {
 h1 {
   font-size: 5rem;
   position: relative;
-  top: -1rem;
+  top: -3.5rem;
   padding-left: 20px;
 }
 
 h2 {
   font-size: 2rem;
   position: relative;
-  top: -1.7rem;
+  top: -3.9rem;
   padding-left: 20px;
 }
 
 h3 {
   position: relative;
   left: 88vw;
-  bottom: 13rem;
+  bottom: 16rem;
   font-size: 2rem;
 }
 
@@ -35,7 +35,7 @@ h3 {
   display: grid;
   grid-gap: 0.5rem;
   position: relative;
-  top: -13rem;
+  top: -17.3rem;
   left: 88vw;
   font-size: 2rem;
   margin-right: 3rem;

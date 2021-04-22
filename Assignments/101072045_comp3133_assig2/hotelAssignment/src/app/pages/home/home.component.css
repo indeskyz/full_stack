@@ -6,6 +6,7 @@ body {
 h1 {
   position: relative;
   left: 1rem;
+  top: -3.7rem;
   font-size: 4rem;
 }
 
@@ -39,6 +40,7 @@ button:hover {
   flex-direction: row;
   justify-content: left;
   align-content: center;
+  padding-bottom: 2rem;
 }
 
 .container * {
