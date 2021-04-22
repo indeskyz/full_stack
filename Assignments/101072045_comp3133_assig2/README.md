@@ -1,5 +1,15 @@
 ## Assignment 02 Features & Things to Note
 
+### In Order for the the application to actually run, a .env file **must** be created with the following fields & values
+
+**_there is one value using http and one using https_**
+
+```javascript
+clientOrigin = http:localhost:4200
+AUTH0_AUDIENCE = https://hotelBooking
+AUTH0_DOMAIN = hotel-booking.us.auth0.com
+```
+
 - The Application Logs The Following:
   - Server Startup
   - Database Connection
