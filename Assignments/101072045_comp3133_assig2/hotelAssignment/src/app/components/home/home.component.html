@@ -1,15 +1,26 @@
+<div [hidden]="splashScreen" class="splash-screen ">
+    <div class="title tracking-out-expand-fwd-bottom">SERENE. </div>
+    <div class="desc blur-out-contract">An API For E-Commerce</div>
+</div>
+
 <body *ngIf="(auth.isAuthenticated$ | async) === false">
+
+
+
+
     <h1>Welcome</h1>
-<h2>You Have 2 Ways to Access The Application</h2>
-<ul>
-    <li>You Can sign in using the following credentials: 
-        <p><u>Email:</u><b> hotelBookerForGBC@gmail.com</b></p>
-        <p><u>Password:</u><b> GBCSchoolPasswordForFullStack2020</b></p></li>
-    
-    <li>Or, you can use those same credentials but use the <b>'Continue With Google'</b> option.</li>
-    
-</ul>
+    <h2>You Have 2 Ways to Access The Application</h2>
+    <div class="container">
+        <ul>
+            <li>You Can sign in using the following credentials:
+                <p><u>Email:</u><b> hotelBookerForGBC@gmail.com</b></p>
+                <p><u>Password:</u><b> GBCSchoolPasswordForFullStack2020</b></p>
+            </li>
+
+            <li>Or, you can use those same credentials but use the <b>'Continue With Google'</b> option.</li>
+
+        </ul>
+    </div>
     <h4>You may register for an account as well. Upon registration, a confirmation email will be sent to the email address that you provide</h4>
 
 </body>
-

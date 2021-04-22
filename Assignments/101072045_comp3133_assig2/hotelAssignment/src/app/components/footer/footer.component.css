@@ -1,0 +1,48 @@
+.footer {
+  background-color: #5d8198;
+  border: 2px solid #01161e;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+h1,
+h2 {
+  position: relative;
+}
+
+h1 {
+  font-size: 5rem;
+  position: relative;
+  top: -1rem;
+  padding-left: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  position: relative;
+  top: -1.7rem;
+  padding-left: 20px;
+}
+
+h3 {
+  position: relative;
+  left: 88vw;
+  bottom: 13rem;
+  font-size: 2rem;
+}
+
+.list-container {
+  display: grid;
+  grid-gap: 0.5rem;
+  position: relative;
+  top: -13rem;
+  left: 88vw;
+  font-size: 2rem;
+  margin-right: 3rem;
+}
+
+.item-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}

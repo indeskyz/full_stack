@@ -3,56 +3,83 @@
 <body *ngIf="auth.isAuthenticated$ | async">
     <h1 *ngIf="auth.user$ | async as user">Welcome Back, {{user?.name}}</h1>
 
+    <div class="container">
+        <div class="btn-1">
+            <button routerLink="/booking-page" class="nav-link" routerLinkActive="router-link-exact-active">
+                Create a Booking
+            </button>
+        </div>
+        <div class="btn-2">
+            <button  routerLink="/view-bookings-page" class="nav-link" routerLinkActive="router-link-exact-active">
+                View All Bookings
+            </button>
+        </div>
+        <div class="btn-3">
+            <button  routerLink="/search-hotels-by-name-page" class="nav-link" routerLinkActive="router-link-exact-active">
+                Search Hotels By Name
+            </button>
+        </div>
 
-    <button routerLink="/booking-page" class="nav-link" routerLinkActive="router-link-exact-active">
-        Create a Booking
-    </button>
-    
-    <button routerLink="/view-bookings-page" class="nav-link" routerLinkActive="router-link-exact-active">
-        View All Bookings
-    </button>
-    
-    <button routerLink="/search-hotels-by-name-page" class="nav-link" routerLinkActive="router-link-exact-active">
-        Search Hotels By Name
-    </button>
-    
-    <button routerLink="/search-hotels-by-city-page" class="nav-link" routerLinkActive="router-link-exact-active">
-        Search Hotels By City
-    </button>
-
-    <div>
-    <button (click)="refresh()">Update Listings</button>
+        <div class="btn btn-4">
+            <button  routerLink="/search-hotels-by-city-page" class="nav-link" routerLinkActive="router-link-exact-active">
+                Search Hotels By City
+            </button>
+        </div>
+    <div class=" btn btn-5">
+        <button class="refresh" (click)="refresh()">Update Listings</button>
+    </div>
     </div>
 
-    <div *ngIf="hotelList">
-        <h2>All Hotels Currently Listed In The System</h2>
-        <ul *ngFor="let hotel of hotelList">
-            <h3>
-                <div><b>{{hotel.hotel_name}}</b></div>
-            </h3>
-            <li>
-                <div><b>ID: </b> {{hotel.hotel_id}}</div>
-            </li>
-            <li>
-                <div><b>Street: </b>{{hotel.street}}</div>
-            </li>
 
-            <li>
-                <div> <b>Postal Code: </b>{{hotel.postal_code}}</div>
-            </li>
+    <div *ngIf="hotelList" class="hotel-container">
 
-            <li>
-                <div><b>Price per day: </b>${{hotel.price}}</div>
-            </li>
-
-            <li>
-                <div> <b>Contact Email: </b> {{hotel.email}}</div>
-            </li>
-
-            <li>
-                <div> <b>Associated User ID: </b> {{hotel.user_id}}</div>
-            </li>
-
-        </ul>
+    <mat-grid-list cols="7" rowHeight="7:1">
+        <mat-grid-tile>
+            <b>Name</b>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <b>ID</b>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <b>Street</b>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <b>Postal Code</b>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <b>Price per day</b>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <b>Contact Email</b>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <b>Associated User ID</b>
+        </mat-grid-tile>
+        <ng-container *ngFor="let hotel of hotelList">
+            <mat-grid-tile>
+                <b> {{ hotel.hotel_name}} </b>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                {{ hotel.hotel_id}}
+            </mat-grid-tile>
+            <mat-grid-tile>
+                {{ hotel.street}}
+            </mat-grid-tile>
+            <mat-grid-tile>
+                {{ hotel.postal_code}}
+            </mat-grid-tile>
+            <mat-grid-tile>
+               $ {{ hotel.price}}
+            </mat-grid-tile>
+            <mat-grid-tile>
+                {{ hotel.email}}
+            </mat-grid-tile>
+            <mat-grid-tile>
+                {{ hotel.user_id}}
+            </mat-grid-tile>
+        </ng-container>
+    </mat-grid-list>
     </div>
+
+
 </body>

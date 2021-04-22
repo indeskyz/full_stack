@@ -6,7 +6,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-y: scroll;
+  background-color: #5d8198;
+  overflow: hidden;
+  height: 100vh;
 }
 
 .spinner {
@@ -27,4 +29,13 @@ body {
   min-height: 500px;
   align-items: center;
   justify-content: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
 }

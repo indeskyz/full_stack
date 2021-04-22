@@ -1,0 +1,83 @@
+body {
+  background-color: #642b2e;
+  height: 65vh;
+  width: 100vw;
+}
+
+h1 {
+  position: relative;
+  left: 1rem;
+  font-size: 4rem;
+}
+
+h2 {
+  position: relative;
+  left: 1rem;
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+button {
+  border-radius: 10px;
+  background-color: #011627;
+  border-color: transparent;
+  color: #96ede2;
+  height: 4rem;
+  width: 10rem;
+  transition: 1s all ease;
+}
+
+button:hover {
+  box-shadow: #493657 250px 0 0 2px inset;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-content: center;
+}
+
+.container * {
+  position: relative;
+}
+
+.btn-1,
+.btn-2,
+.btn-3,
+.btn-4,
+.btn-5 {
+  padding-right: 0.6rem;
+  left: 1rem;
+}
+
+.btn-3 {
+  left: 1.3rem;
+}
+
+.btn-4 {
+  left: 2rem;
+}
+
+.btn-5 {
+  left: 2.5rem;
+}
+
+.refresh {
+  transition: 1s all ease-in-out;
+}
+
+.refresh:hover {
+  box-shadow: #729776 250px 0 0 2px inset;
+  border-color: transparent;
+  color: black;
+}
+
+mat-grid-tile {
+  font-size: 1.77rem;
+  line-break: auto;
+}

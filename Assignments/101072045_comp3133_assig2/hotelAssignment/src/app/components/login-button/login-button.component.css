@@ -1,0 +1,17 @@
+.login-btn {
+  position: absolute;
+  left: clamp(40vw, 45.4vw, 47.2vw);
+  top: 65vh;
+  height: 5rem;
+  width: 15rem;
+  background-color: #011627;
+  border-radius: 2em;
+  border-color: transparent;
+  color: #c1666b;
+  transition: all 0.8s ease-in-out;
+}
+
+.login-btn:hover {
+  box-shadow: #d4b483 250px 0 0 2px inset;
+  color: black;
+}

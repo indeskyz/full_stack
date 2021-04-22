@@ -1,0 +1,21 @@
+body {
+  background-color: #642b2e;
+}
+
+.logout-btn {
+  position: absolute;
+  left: clamp(40vw, 46.1vw, 47.2vw);
+  top: 65vh;
+  height: 5rem;
+  width: 15rem;
+  background-color: #011627;
+  border-radius: 2em;
+  border-color: transparent;
+  color: #c1666b;
+  transition: 0.6s all ease-out;
+}
+
+.logout-btn:hover {
+  box-shadow: #d4b483 -250px -20px 10px 2px inset;
+  color: black;
+}

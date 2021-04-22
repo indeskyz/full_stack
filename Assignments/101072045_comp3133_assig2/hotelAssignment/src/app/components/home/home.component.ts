@@ -7,7 +7,13 @@ import { AuthService } from '@auth0/auth0-angular';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+  splashScreen: boolean = false;
+
   constructor(public auth: AuthService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.splashScreen = true;
+    }, 2500);
+  }
 }

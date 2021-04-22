@@ -1,30 +1,46 @@
 
 <body>
 
-    <div *ngIf="bookingsList">
-        <h2>All Hotels Currently Booked In The System</h2>
-        <ul *ngFor="let hotel of bookingsList">
-            <li>
-                <div><b>ID: </b> {{hotel.hotel_id}}</div>
-            </li>
-            <li>
-                <div><b>Inital Booking Date: </b>{{hotel.booking_date}}</div>
-            </li>
+    <div *ngIf="bookingsList" class="booking-container">
+    
+    <mat-grid-list cols="5" rowHeight="5:1">
+        <mat-grid-tile>
+            <b>ID</b>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <b>Inital Booking Date</b>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <b>Start of Booking</b>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <b>End of Booking</b>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <b>Associated User ID</b>
+        </mat-grid-tile>
+        <ng-container *ngFor="let hotel of bookingsList">
+            <mat-grid-tile>
+                {{ hotel.hotel_id}}
+            </mat-grid-tile>
+            <mat-grid-tile>
+                {{ hotel.booking_date}}
+            </mat-grid-tile>
+            <mat-grid-tile>
+                {{ hotel.booking_start}}
+            </mat-grid-tile>
+            <mat-grid-tile>
+                {{ hotel.booking_end}}
+            </mat-grid-tile>
+            <mat-grid-tile>
+                {{ hotel.user_id}}
+            </mat-grid-tile>
+        </ng-container>
+    </mat-grid-list>
 
-            <li>
-                <div> <b>Start of Booking: </b>{{hotel.booking_start}}</div>
-            </li>
 
-            <li>
-                <div><b>End of Booking: </b>{{hotel.booking_end}}</div>
-            </li>
-
-
-            <li>
-                <div> <b>Associated User ID: </b> {{hotel.user_id}}</div>
-            </li>
-
-        </ul>
     </div>
+
+    <app-logout-button></app-logout-button>
 </body>
 

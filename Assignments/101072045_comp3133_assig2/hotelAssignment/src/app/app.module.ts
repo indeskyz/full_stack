@@ -28,6 +28,10 @@ import { ViewBookingsPageComponent } from './pages/view-bookings-page/view-booki
 import { SearchHotelByNameComponent } from './pages/search-hotel-by-name/search-hotel-by-name.component';
 import { SearchHotelByCityComponent } from './pages/search-hotel-by-city/search-hotel-by-city.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,6 +65,9 @@ import { SearchHotelByCityComponent } from './pages/search-hotel-by-city/search-
       },
     }),
     GraphQLModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatFormFieldModule,
   ],
   providers: [
     {
