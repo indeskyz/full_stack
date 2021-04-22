@@ -4,10 +4,10 @@
 
 **_there is one value using http and one using https_**
 
-```javascript
-clientOrigin = http:localhost:4200
-AUTH0_AUDIENCE = https://hotelBooking
-AUTH0_DOMAIN = hotel-booking.us.auth0.com
+```
+ clientOrigin = http:localhost:4200
+ AUTH0_AUDIENCE = https://hotelBooking
+ AUTH0_DOMAIN = hotel-booking.us.auth0.com
 ```
 
 - The Application Logs The Following:
