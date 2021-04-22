@@ -10,6 +10,9 @@ exports.resolvers = {
     getHotels: async (parent, args, info) => {
       return await Hotel.find({});
     },
+    getHotelsOffset: async (parent, args, info) => {
+      return await Hotel.find({ first: args.first, offset: args.offset });
+    },
     getHotelByCity: async (parent, args) => {
       return await Hotel.find({ city: args.city });
     },
@@ -51,7 +54,7 @@ exports.resolvers = {
       return await newBooking.save();
     },
     createHotel: async (parent, args) => {
-      validateField(args.email, (emal = "email"), checkEmail);
+      validateField(args.email, (email = "email"), checkEmail);
       validateField(
         args.postal_code,
         (postalCode = "postal code"),

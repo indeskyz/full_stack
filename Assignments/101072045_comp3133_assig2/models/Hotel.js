@@ -30,7 +30,7 @@ const HotelSchema = new mongoose.Schema(
       unique: true,
       lowercase: true,
       minLength: [3, "Street Name Must be Longer than 2 Characters"],
-      maxLength: [15, "Street Name Cannot Exceed 15 Characters"],
+      maxLength: [50, "Street Name Cannot Exceed 50 Characters"],
     },
     city: {
       type: String,
@@ -39,7 +39,7 @@ const HotelSchema = new mongoose.Schema(
       unique: true,
       lowercase: true,
       minLength: [3, "CityName Must be Longer than 3 Characters"],
-      maxLength: [15, "City Name Cannot Exceed 15 Characters"],
+      maxLength: [50, "City Name Cannot Exceed 50 Characters"],
     },
     postal_code: {
       type: String,
@@ -52,7 +52,7 @@ const HotelSchema = new mongoose.Schema(
       },
       message: (props) =>
         `${props.value} is an invalid Postal Code format. \nmust match N7S 1T6 or N7S1T6`,
-      minLength: [6, "Invalid Postal Code"],
+      minLength: [1, "Invalid Postal Code"],
       maxLength: [8, "Invalid Postal Code"],
     },
 

@@ -20,6 +20,19 @@ export class GetAllHotelsService {
       }
     }
   `;
+  getHotelsOffset = gql`
+    query getHotelsOffset($first: Int!, $offset: Int!) {
+      getHotelsOffset(first: $first, offset: $offset) {
+        hotel_id
+        hotel_name
+        street
+        postal_code
+        price
+        email
+        city
+      }
+    }
+  `;
   constructor(private apollo: Apollo) {}
 
   getAllHotels() {

@@ -28,7 +28,13 @@ exports.typeDefs = gql`
     email: String!
   }
 
+  type FeedItem {
+    id: ID!
+    message: String!
+  }
+
   type Query {
+    getHotelsOffset(first: Int!, offset: Int!): [Hotel]
     getHotels: [Hotel]
     getHotelByName(hotel_name: String!): [Hotel]
     getHotelByCity(city: String!): [Hotel]
