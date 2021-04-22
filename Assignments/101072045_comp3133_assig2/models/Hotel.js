@@ -15,6 +15,7 @@ const HotelSchema = new mongoose.Schema(
       required: [true, "A Hotel Name must be Provided"],
       trim: true,
       unique: true,
+      lowercase: true,
       minLength: [3, "Hotel Name Must be Longer than 2 Characters"],
       maxLength: [15, "Hotel Name Cannot Exceed 15 Characters"],
     },
@@ -27,6 +28,7 @@ const HotelSchema = new mongoose.Schema(
       ],
       trim: true,
       unique: true,
+      lowercase: true,
       minLength: [3, "Street Name Must be Longer than 2 Characters"],
       maxLength: [15, "Street Name Cannot Exceed 15 Characters"],
     },
@@ -35,6 +37,7 @@ const HotelSchema = new mongoose.Schema(
       required: [true, "Please provide the city where the hotel is located in"],
       trim: true,
       unique: true,
+      lowercase: true,
       minLength: [3, "CityName Must be Longer than 3 Characters"],
       maxLength: [15, "City Name Cannot Exceed 15 Characters"],
     },
@@ -43,6 +46,7 @@ const HotelSchema = new mongoose.Schema(
       required: [true, "Please provide the postal code of the hotel"],
       trim: true,
       unique: true,
+      lowercase: true,
       validate: function (postalCode) {
         return checkPostalCode.test(postalCode);
       },
@@ -64,6 +68,7 @@ const HotelSchema = new mongoose.Schema(
       type: String,
       required: [true, "Please provide an email"],
       unique: true,
+      lowercase: true,
       validate: function (emailString) {
         return checkEmail.test(emailString);
       },

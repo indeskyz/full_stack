@@ -1,3 +1,5 @@
+//WE DONT USE ANGULAR BUILT IN FUNCTIONS WE INSTANTIATE OBJECTS INSTEAD
+
 export class ErrorClass {
   constructor() {}
 

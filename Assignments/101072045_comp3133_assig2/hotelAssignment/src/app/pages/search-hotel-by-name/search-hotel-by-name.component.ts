@@ -26,6 +26,7 @@ export class SearchHotelByNameComponent implements OnInit {
         variables: {
           hotel_name: this.hotelName,
         },
+        errorPolicy: 'all',
       })
       .subscribe((resp: any) => {
         this.hotelByNameList = resp.data.getHotelByName;

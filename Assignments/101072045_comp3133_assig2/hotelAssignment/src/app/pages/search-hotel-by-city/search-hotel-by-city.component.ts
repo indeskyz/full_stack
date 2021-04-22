@@ -25,6 +25,7 @@ export class SearchHotelByCityComponent implements OnInit {
         variables: {
           city: this.city,
         },
+        errorPolicy: 'all',
       })
       .subscribe((resp: any) => {
         this.hotelByCityList = resp.data.getHotelByCity;

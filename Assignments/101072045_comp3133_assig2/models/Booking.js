@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const { checkEmail, checkPostalCode, checkDate } = require("../helpers/regex");
 
-//FIX INDEXES
 const BookingSchema = new mongoose.Schema(
   {
     hotel_id: {
@@ -16,6 +15,7 @@ const BookingSchema = new mongoose.Schema(
       required: [true, "Please Enter the Date of your Inital Booking"],
       trim: true,
       unqiue: true,
+      lowercase: true,
       minLength: [3, "Booking Date must be longer than 2 Characters"],
       maxLength: [15, "Booking Date Cannot Exceed 15 Characters"],
       validate: function (startDate) {
@@ -29,6 +29,7 @@ const BookingSchema = new mongoose.Schema(
       required: [true, "Please Enter the Date You Wish to Begin Your Stay"],
       trim: true,
       unique: true,
+      lowercase: true,
       minLength: [
         3,
         "The Start of your Booking Date Must be Longer than 2 Characters",
@@ -48,6 +49,7 @@ const BookingSchema = new mongoose.Schema(
       required: [true, "please enter the date you wish to checkout on"],
       trim: true,
       unique: true,
+      lowercase: true,
       minLength: [
         3,
         "The End of your Booking Date Must be Longer than 2 Characters",

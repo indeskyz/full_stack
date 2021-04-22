@@ -37,6 +37,7 @@ export class BookingPageComponent implements OnInit {
           booking_end: this.booking_end,
           user_id: this.user_id,
         },
+        errorPolicy: 'all',
       })
       .subscribe((resp) => {
         console.log(resp);

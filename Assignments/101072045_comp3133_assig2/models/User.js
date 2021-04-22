@@ -15,6 +15,7 @@ const UserSchema = new mongoose.Schema(
       required: [true, "A Username Must be Provided"],
       trim: true,
       unique: true,
+      lowercase: true,
       minLength: [1, "Username Must be At Least 1 Character Long"],
       maxLength: [30, "Username Cannot Exceed 30 Characters"],
     },
@@ -23,12 +24,14 @@ const UserSchema = new mongoose.Schema(
       required: [true, "Password Cannot be Blank"],
       trim: true,
       unique: true,
+      lowercase: true,
       minLength: [5, "Passwords Must be Longer than 5 Characters"],
     },
     email: {
       type: String,
       required: true,
       unique: true,
+      lowercase: true,
       validate: function (emailString) {
         return checkEmail.test(emailString);
       },
