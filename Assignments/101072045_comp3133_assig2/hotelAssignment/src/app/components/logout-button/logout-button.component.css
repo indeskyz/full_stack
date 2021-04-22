@@ -2,9 +2,14 @@ body {
   background-color: #642b2e;
 }
 
+div {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
 .logout-btn {
   position: absolute;
-  left: clamp(40vw, 46.1vw, 47.2vw);
   top: 65vh;
   height: 5rem;
   width: 15rem;

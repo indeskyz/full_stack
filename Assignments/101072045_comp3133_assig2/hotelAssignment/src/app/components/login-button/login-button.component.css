@@ -1,6 +1,11 @@
+div {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
 .login-btn {
   position: absolute;
-  left: clamp(40vw, 45.4vw, 47.2vw);
   top: 65vh;
   height: 5rem;
   width: 15rem;

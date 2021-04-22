@@ -1,0 +1,97 @@
+body {
+  height: 65vh;
+  background-color: #642b2e;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 4rem;
+  position: relative;
+  bottom: 2rem;
+}
+button {
+  border-radius: 10px;
+  background-color: #011627;
+  border-color: transparent;
+  color: #96ede2;
+  height: 6rem;
+  width: 15rem;
+  transition: 1s all ease;
+}
+
+button:hover {
+  box-shadow: #466362 250px 0 0 2px inset;
+}
+
+input {
+  height: 5vh;
+  width: 15vw;
+  font-size: 1.74rem;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: repeat(4, 2fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+.item-1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.item-2 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.item-3 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.item-4 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.item-5 {
+  grid-column: 3;
+  grid-row: 4;
+  place-self: center stretch;
+  position: relative;
+  right: 14rem;
+  bottom: 6.5rem;
+}
+
+.btn {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 5.6rem;
+}
+
+.format-helper {
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.booking-date {
+  position: relative;
+  bottom: 19.8rem;
+  left: 54.9vw;
+}
+.booking-start {
+  position: relative;
+  bottom: 14.7rem;
+  left: 29.6vw;
+}
+.booking-end {
+  position: relative;
+  bottom: 15.7rem;
+  left: 54.9vw;
+}
