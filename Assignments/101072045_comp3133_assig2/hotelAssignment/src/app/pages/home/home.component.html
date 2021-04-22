@@ -1,6 +1,6 @@
 <app-home *ngIf="(auth.isAuthenticated$ | async) === false"></app-home>
 
-<body *ngIf="auth.isAuthenticated$ | async">
+<body class="main-bg" *ngIf="auth.isAuthenticated$ | async">
     <h1 *ngIf="auth.user$ | async as user">Welcome Back, {{user?.name}}</h1>
 
     <div class="container">
