@@ -6,8 +6,9 @@ body {
 h1 {
   position: relative;
   left: 1rem;
-  top: -3.7rem;
+  top: 1rem;
   font-size: 4rem;
+  padding-bottom: 3rem;
 }
 
 h2 {

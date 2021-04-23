@@ -13,6 +13,7 @@ export class SearchHotelByNameComponent implements OnInit {
   loading: boolean = false;
   hotelDetails: boolean = true;
   results: string = 'Results';
+  resultsMsg: boolean = true;
 
   constructor(private apollo: Apollo, private query: FindHotelByNameService) {}
 
@@ -32,9 +33,13 @@ export class SearchHotelByNameComponent implements OnInit {
         this.hotelByNameList = resp.data.getHotelByName;
         if (this.hotelByNameList.length === 0) {
           this.results = 'No Matches Found';
+          this.hotelDetails = true;
+          this.resultsMsg = !this.resultsMsg;
+        } else {
+          this.hotelDetails = !this.hotelDetails;
+          this.resultsMsg = !this.resultsMsg;
         }
         this.loading = !this.loading;
-        this.hotelDetails = !this.hotelDetails;
       });
   }
 }

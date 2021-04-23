@@ -23,20 +23,20 @@ export class HomePageComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    //    this.apollo
-    //      .query({
-    //        query: this.query.getHotelsOffset,
-    //        variables: {
-    //          first: this.first,
-    //          offset: this.offset,
-    //        },
-    //        errorPolicy: 'all',
-    //      })
-    //      .subscribe((resp: any) => {
-    //        this.hotelList = resp.data.getHotelsOffset;
-    //        console.log(resp.data);
-    //      });
-    //
+    this.apollo
+      .query({
+        query: this.query.getHotelsOffset,
+        variables: {
+          first: this.first,
+          offset: this.offset,
+        },
+        errorPolicy: 'all',
+      })
+      .subscribe((resp: any) => {
+        this.hotelList = resp.data.getHotelsOffset;
+        console.log(resp.data);
+      });
+
     this.query.getAllHotels().subscribe((resp: any) => {
       this.hotelList = resp.data.getHotels;
     });

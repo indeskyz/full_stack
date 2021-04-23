@@ -7,12 +7,20 @@ img {
   width: 40vw;
 }
 
+h2 {
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(4, 2fr);
   grid-template-rows: repeat(4, 2fr);
   justify-items: center;
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .item-1 {
@@ -24,10 +32,12 @@ img {
   grid-column: 4;
   grid-row: 1;
   margin-left: 2rem;
+  font-size: 3rem;
 }
 
 .item-3 {
   grid-column: 3;
   grid-row: 1;
   font-size: 1.52rem;
+  grid-gap: 2rem;
 }

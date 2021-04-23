@@ -6,6 +6,7 @@ h1 {
   position: relative;
   left: 45vw;
   font-size: 4rem;
+  padding-top: 3rem;
 }
 
 h2,
@@ -13,10 +14,18 @@ h4,
 .container {
   margin-left: 5rem;
   font-size: 2rem;
+  position: relative;
+  padding-top: 2.5rem;
+}
+.creds {
+  position: relative;
+  top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.container {
-  position: relative;
+.creds-1 {
+  margin-top: 35px;
+  padding-bottom: 3rem;
 }
 
 .splash-screen {

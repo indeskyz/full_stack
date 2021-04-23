@@ -17,11 +17,15 @@
     </div>
 
 
-<div *ngIf="loading">
+<div class="loading" *ngIf="loading">
     <b>Fetching Results</b>
 </div>
 
-<div *ngIf="hotelByNameList" class="hotel-container" [hidden]=""hotelDetails>
+<div class="dataResults"  [hidden]="resultsMsg">
+    <b>{{results}}</b>
+</div>
+
+<div *ngIf="hotelByNameList" class="hotel-container" [hidden]="hotelDetails">
 
     <mat-grid-list cols="6" rowHeight="6:1">
         <mat-grid-tile>

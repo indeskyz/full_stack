@@ -10,15 +10,14 @@ import { IHotelByCity } from '../../models/hotel-by-city';
 export class SearchHotelByCityComponent implements OnInit {
   city!: string;
   hotelByCityList!: IHotelByCity[];
-  loading: boolean = false;
   hotelDetails: boolean = true;
   results: string = 'Results';
+  queryResults: boolean = true;
   constructor(private apollo: Apollo, private query: FindHotelByCityService) {}
 
   ngOnInit(): void {}
 
   getHotelByCity() {
-    this.loading = !this.loading;
     this.apollo
       .query<IHotelByCity[]>({
         query: this.query.getHotelByCity,
@@ -31,10 +30,11 @@ export class SearchHotelByCityComponent implements OnInit {
         this.hotelByCityList = resp.data.getHotelByCity;
         if (this.hotelByCityList.length === 0) {
           this.results = 'No Matches Found';
+          this.queryResults = !this.queryResults;
+        } else {
+          this.hotelDetails = !this.hotelDetails;
+          this.queryResults = !this.queryResults;
         }
-
-        this.loading = !this.loading;
-        this.hotelDetails = !this.hotelDetails;
       });
   }
 }

@@ -16,13 +16,12 @@
     </div>
 
 
+    <div class="dataResults" [hidden]="queryResults">{{results}}</div>
 
 
-<div *ngIf="loading">
-    <b>Fetching Results</b>
-</div>
 
-<div *ngIf="hotelByCityList" class="hotel-container" [hidden]=""hotelDetails>
+
+<div *ngIf="hotelByCityList" class="hotel-container" [hidden]="hotelDetails">
 
     <mat-grid-list cols="6" rowHeight="6:1">
         <mat-grid-tile>

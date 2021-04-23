@@ -13,7 +13,8 @@ h3 {
   justify-items: center;
   font-size: 4rem;
   position: relative;
-  bottom: 2rem;
+  top: 1rem;
+  padding-bottom: 3rem;
 }
 button {
   border-radius: 10px;
@@ -67,4 +68,15 @@ label {
 .hotel-container {
   position: relative;
   bottom: 13rem;
+}
+
+.loading {
+  font-size: 5rem;
+}
+
+.dataResults {
+  font-size: 5rem;
+  position: relative;
+  margin-left: 1rem;
+  bottom: 17rem;
 }

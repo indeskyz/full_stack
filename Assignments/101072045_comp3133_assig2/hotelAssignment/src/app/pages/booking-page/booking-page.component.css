@@ -8,7 +8,8 @@ h3 {
   justify-items: center;
   font-size: 4rem;
   position: relative;
-  bottom: 2rem;
+  top: 1rem;
+  padding-bottom: 5rem;
 }
 button {
   border-radius: 10px;
@@ -86,11 +87,16 @@ input {
 }
 .booking-start {
   position: relative;
-  bottom: 14.7rem;
+  bottom: 14.9rem;
   left: 29.6vw;
 }
 .booking-end {
   position: relative;
-  bottom: 15.7rem;
+  bottom: 16rem;
   left: 54.9vw;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: bold;
 }

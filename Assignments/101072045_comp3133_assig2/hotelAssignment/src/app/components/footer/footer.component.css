@@ -3,6 +3,7 @@
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-right-color: transparent;
+  height: 30vh;
 }
 
 h1,
@@ -13,29 +14,29 @@ h2 {
 h1 {
   font-size: 5rem;
   position: relative;
-  top: -3.5rem;
+  top: 2.3rem;
   padding-left: 20px;
 }
 
 h2 {
   font-size: 2rem;
   position: relative;
-  top: -3.9rem;
+  top: 5.8rem;
   padding-left: 20px;
 }
 
 h3 {
   position: relative;
   left: 88vw;
-  bottom: 16rem;
+  bottom: 4rem;
   font-size: 2rem;
 }
 
 .list-container {
   display: grid;
-  grid-gap: 0.5rem;
+  grid-gap: 1.5rem;
   position: relative;
-  top: -17.3rem;
+  top: -3.6rem;
   left: 88vw;
   font-size: 2rem;
   margin-right: 3rem;

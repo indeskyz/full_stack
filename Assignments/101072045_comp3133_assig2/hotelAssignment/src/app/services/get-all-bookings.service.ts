@@ -6,6 +6,18 @@ import gql from 'graphql-tag';
   providedIn: 'root',
 })
 export class GetAllBookingsService {
+  latestData = gql`
+    query {
+      getHotelBooking {
+        hotel_id
+        booking_date
+        booking_start
+        booking_end
+        user_id
+      }
+    }
+  `;
+
   constructor(private apollo: Apollo) {}
 
   getHotelBookings() {
